@@ -27,6 +27,19 @@
     <servlet-name>springMVC</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.png</url-pattern>
+    <url-pattern>*.jpg</url-pattern>
+    <url-pattern>*.gif</url-pattern>
+    <url-pattern>*.js</url-pattern>
+    <url-pattern>*.css</url-pattern>
+    <url-pattern>*.ico</url-pattern>
+    <url-pattern>*.zip</url-pattern>
+    <url-pattern>*.xml</url-pattern>
+    <url-pattern>*.mp3</url-pattern>
+    <url-pattern>*.html</url-pattern>
+  </servlet-mapping>
   <!--把applicationContext.xml加入到配置文件中-->
   <context-param>
     <param-name>contextConfigLocation</param-name>
