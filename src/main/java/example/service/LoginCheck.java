@@ -1,6 +1,7 @@
 package example.service;
 
 import example.dao.Dao;
+import example.service.utils.AppMD5Util;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,6 +9,8 @@ import java.sql.ResultSet;
 
 public class LoginCheck {
     public static boolean check(String username, String password) {
+        password = AppMD5Util.getMD5(password);
+
         boolean isPassed = false;
         try {
             Connection conn = Dao.getConnection();
